@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FITME</string>
+    <string name="history_title">BMI History</string>
+
+    <string name="status_underweight">Underweight</string>
+    <string name="status_normal">Normal Weight</string>
+    <string name="status_overweight">Overweight</string>
+    <string name="status_obese">Obese</string>
+</resources>

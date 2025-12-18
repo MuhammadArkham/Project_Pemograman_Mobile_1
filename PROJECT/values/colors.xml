@@ -1,0 +1,8 @@
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="fitme_green">#4CAF50</color>
+    <color name="fitme_teal">#25A69A</color>
+    <color name="fitme_dark_green">#3B5B46</color>
+</resources>

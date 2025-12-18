@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FITME</string>
+    <string name="history_title">Historial de IMC</string>
+
+    <string name="status_underweight">Bajo peso</string>
+    <string name="status_normal">Peso normal</string>
+    <string name="status_overweight">Sobrepeso</string>
+    <string name="status_obese">Obeso</string>
+</resources>

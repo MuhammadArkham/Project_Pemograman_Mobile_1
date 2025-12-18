@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FITME</string>
+    <string name="history_title">Riwayat BMI</string>
+
+    <string name="status_underweight">Berat Kurang</string>
+    <string name="status_normal">Normal</string>
+    <string name="status_overweight">Kegemukan</string>
+    <string name="status_obese">Obesitas</string>
+</resources>
