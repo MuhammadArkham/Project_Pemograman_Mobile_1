@@ -9,7 +9,7 @@ Matakuliah : Pemograman Mobile1
 Dosen Pengampu :  Donny Maulana, S.Kom., M.M.S.I.
 
 ### 1. Splash Screen (Deteksi location, Bendera/logo pemda, Say Hello/Selamat Datang sesuai lokasi daerah masing-masing)
-   ![foto](https://github.com/MuhammadArkham/Project_Pemograman_Mobile_1/blob/main/FOTO%20PROJECT/Screenshot%202025-11-09%20214546.png?raw=true)
+   ![foto](https://github.com/MuhammadArkham/Project_Pemograman_Mobile_1/blob/main/FOTO%20PROJECT/Screenshot%202025-12-19%20002112.png?raw=true)
 ### 2. StoryBoard Project
    ![foto](https://github.com/MuhammadArkham/Project_Pemograman_Mobile_1/blob/main/FOTO%20PROJECT/Storyboard.png?raw=true)
 
