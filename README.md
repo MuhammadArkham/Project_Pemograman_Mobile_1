@@ -118,7 +118,7 @@ Dosen Pengampu :  Donny Maulana, S.Kom., M.M.S.I.
 ### 3. Mockup Project
    ![foto](https://github.com/MuhammadArkham/Project_Pemograman_Mobile_1/blob/main/FOTO%20PROJECT/Screenshot%202025-12-19%20002725.png?raw=true)
 ### 4. UI (User Interface) Project
-   ![foto](https://github.com/MuhammadArkham/Project_Pemograman_Mobile_1/blob/main/FOTO%20PROJECT/Screenshot%202025-11-07%20042944.png?raw=true)
+   ![foto](https://github.com/MuhammadArkham/Project_Pemograman_Mobile_1/blob/main/FOTO%20PROJECT/Screenshot%202025-12-19%20003935.png?raw=true)
    ![foto](https://github.com/MuhammadArkham/Project_Pemograman_Mobile_1/blob/main/FOTO%20PROJECT/e51c9953-e50d-4bf4-8512-7d1d7e2e4a21.png?raw=true)
 ### 5. UX (User Experience) VIDEO PROTOTYPE Project
 [Link UX di figma] : https://www.figma.com/proto/9RHhEIs8Jljc6up5fJTqey/Untitled?node-id=0-1&t=Gyi3RDNX9PAP2wHL-1
