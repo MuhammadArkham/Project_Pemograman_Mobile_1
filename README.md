@@ -121,6 +121,7 @@ Dosen Pengampu :  Donny Maulana, S.Kom., M.M.S.I.
    ![foto](https://github.com/MuhammadArkham/Project_Pemograman_Mobile_1/blob/main/FOTO%20PROJECT/Screenshot%202025-12-19%20003935.png?raw=true)
    ![foto](https://github.com/MuhammadArkham/Project_Pemograman_Mobile_1/blob/main/FOTO%20PROJECT/e51c9953-e50d-4bf4-8512-7d1d7e2e4a21.png?raw=true)
 ### 5. UX (User Experience) VIDEO PROTOTYPE Project
+[Link Youtube] :https://youtu.be/V6vmJIDN0ZM?si=THqm1mn8hf3TRDS3
 ### 6. notifikasi Firebase
 ![foto](https://github.com/MuhammadArkham/Project_Pemograman_Mobile_1/blob/main/FOTO%20PROJECT/Screenshot%202025-12-19%20005452.png?raw=true)
 [Link Youtube] :https://youtu.be/V6vmJIDN0ZM?si=THqm1mn8hf3TRDS3
