@@ -124,7 +124,7 @@ Dosen Pengampu :  Donny Maulana, S.Kom., M.M.S.I.
 [Link Youtube] :https://youtu.be/V6vmJIDN0ZM?si=THqm1mn8hf3TRDS3
 ### 6. notifikasi Firebase
 ![foto](https://github.com/MuhammadArkham/Project_Pemograman_Mobile_1/blob/main/FOTO%20PROJECT/Screenshot%202025-12-19%20005452.png?raw=true)
-![foto](https://github.com/MuhammadArkham/Project_Pemograman_Mobile_1/blob/main/FOTO%20PROJECT/WhatsApp%20Image%202025-12-23%20at%2010.30.58_a64c972e.jpg?raw=true)
+![foto](https://github.com/MuhammadArkham/Project_Pemograman_Mobile_1/blob/main/FOTO%20PROJECT/WhatsApp%20Image%202025-12-23%20at%2010.34.15_734c87b3.jpg?raw=true)
 
 ## Link jadwal pada ClickUp
 LINK CLICKUP(BOARD): https://sharing.clickup.com/90181791504/b/2kzm1vrg-558/board
