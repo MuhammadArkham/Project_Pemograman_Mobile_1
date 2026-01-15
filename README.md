@@ -126,11 +126,31 @@ Penjelasan project aplikasi
 
 Tampilan Vidio Project UI/UX 
 [Link Youtube] :https://youtube.com/shorts/YG2sh5dMyGQ?si=ND3No_8X5PhxlHR3
-### 6. notifikasi Firebase
-![foto](https://github.com/MuhammadArkham/Project_Pemograman_Mobile_1/blob/main/FOTO%20PROJECT/Screenshot%202025-12-19%20005452.png?raw=true)
-![foto](https://github.com/MuhammadArkham/Project_Pemograman_Mobile_1/blob/main/FOTO%20PROJECT/WhatsApp%20Image%202025-12-23%20at%2010.34.15_734c87b3.jpg?raw=true)
 
-## Link jadwal pada ClickUp
+### 6. Link jadwal pada ClickUp
 LINK CLICKUP(BOARD): https://sharing.clickup.com/90181791504/b/2kzm1vrg-558/board
 
 LINK CLICKUP(Gantt):https://sharing.clickup.com/90181791504/g/2kzm1vrg-578/gantt
+### 7. notifikasi Firebase
+![foto](https://github.com/MuhammadArkham/Project_Pemograman_Mobile_1/blob/main/FOTO%20PROJECT/Screenshot%202025-12-19%20005452.png?raw=true)
+![foto](https://github.com/MuhammadArkham/Project_Pemograman_Mobile_1/blob/main/FOTO%20PROJECT/WhatsApp%20Image%202025-12-23%20at%2010.34.15_734c87b3.jpg?raw=true)
+
+
+### 8.Implementasi Android Studio
+
+#### Tampilan splashscreen
+![foto](https://github.com/MuhammadArkham/Project_Pemograman_Mobile_1/blob/main/FOTO%20PROJECT/Screenshot%202026-01-15%20211819.png?raw=true)
+#### Tampilan Home(Dashboard)
+![foto](https://github.com/MuhammadArkham/Project_Pemograman_Mobile_1/blob/main/FOTO%20PROJECT/Screenshot%202026-01-15%20211844.png?raw=true)
+#### Tampilan Gender_Selection
+![foto](https://github.com/MuhammadArkham/Project_Pemograman_Mobile_1/blob/main/FOTO%20PROJECT/Screenshot%202026-01-15%20211557.png?raw=true)
+
+#### Tampilan Input data
+![foto](https://github.com/MuhammadArkham/Project_Pemograman_Mobile_1/blob/main/FOTO%20PROJECT/Screenshot%202026-01-15%20211751.png?raw=true)
+
+#### Tampilan Result
+![foto](https://github.com/MuhammadArkham/Project_Pemograman_Mobile_1/blob/main/FOTO%20PROJECT/Screenshot%202026-01-15%20211808.png?raw=true)
+
+#### Tampilan Riwayat
+![foto](https://github.com/MuhammadArkham/Project_Pemograman_Mobile_1/blob/main/FOTO%20PROJECT/Screenshot%202026-01-15%20211620.png?raw=true)
+
