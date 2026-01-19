@@ -8,6 +8,8 @@ Matakuliah : Pemograman Mobile1
 
 Dosen Pengampu :  Donny Maulana, S.Kom., M.M.S.I.
 
+NAMA APLIKASI : FITME
+
 ### 1. Splash Screen (Deteksi location, Bendera, Say Hello/Selamat Datang sesuai lokasi daerah masing-masing)
    ![foto](https://github.com/MuhammadArkham/Project_Pemograman_Mobile_1/blob/main/FOTO%20PROJECT/Screenshot%202026-01-12%20153656.png?raw=true)
 ### 2. StoryBoard Project
