@@ -132,14 +132,16 @@ Tampilan Vidio Project UI/UX
 ## 🎬 Demo Splashscreen Aplikasi FITME
 
 ### 📌 Video Splashscreen – Demo Lokasi Indonesia
-[![Video 1](https://img.youtube.com/vi/bErPKkcWKYg/0.jpg)](https://youtu.be/bErPKkcWKYg)
+
+https://github.com/user-attachments/assets/4db58b9a-eda7-4f9a-9dac-0ce266e481fa
 
 ### 📌 Video Splashscreen – Demo Lokasi United Kingdom
-[![Video 2](https://img.youtube.com/vi/w0QOScqRQP4/0.jpg)](https://youtu.be/w0QOScqRQP4)
+
+https://github.com/user-attachments/assets/bcdfe696-4ebc-4726-af12-2006afc45749
 
 ### 📌 Video Splashscreen – Demo Lokasi Spain
-[![Video 3](https://img.youtube.com/vi/5uNejqTkvk4/0.jpg)](https://youtu.be/5uNejqTkvk4)
 
+https://github.com/user-attachments/assets/75013bff-7b4d-49b4-b8f8-ae11bcdf28c1
 
 ### 6. Link jadwal pada ClickUp
 LINK CLICKUP(BOARD): https://sharing.clickup.com/90181791504/b/2kzm1vrg-558/board
