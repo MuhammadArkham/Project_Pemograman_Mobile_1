@@ -129,6 +129,18 @@ Penjelasan project aplikasi
 Tampilan Vidio Project UI/UX 
 [Link Youtube] :https://youtube.com/shorts/YG2sh5dMyGQ?si=ND3No_8X5PhxlHR3
 
+## 🎬 Demo Video YouTube
+
+### 📌 Video Splashscreen – Demo Lokasi Indonesia
+[![Video 1](https://img.youtube.com/vi/bErPKkcWKYg/0.jpg)](https://youtu.be/bErPKkcWKYg)
+
+### 📌 Video Splashscreen – Demo Lokasi United Kingdom
+[![Video 2](https://img.youtube.com/vi/w0QOScqRQP4/0.jpg)](https://youtu.be/w0QOScqRQP4)
+
+### 📌 Video Splashscreen – Demo Lokasi Spain
+[![Video 3](https://img.youtube.com/vi/5uNejqTkvk4/0.jpg)](https://youtu.be/5uNejqTkvk4)
+
+
 ### 6. Link jadwal pada ClickUp
 LINK CLICKUP(BOARD): https://sharing.clickup.com/90181791504/b/2kzm1vrg-558/board
 
