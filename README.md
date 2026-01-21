@@ -129,7 +129,7 @@ Penjelasan project aplikasi
 Tampilan Vidio Project UI/UX 
 [Link Youtube] :https://youtube.com/shorts/YG2sh5dMyGQ?si=ND3No_8X5PhxlHR3
 
-## 🎬 Demo Video YouTube
+## 🎬 Demo Splashscreen Aplikasi FITME
 
 ### 📌 Video Splashscreen – Demo Lokasi Indonesia
 [![Video 1](https://img.youtube.com/vi/bErPKkcWKYg/0.jpg)](https://youtu.be/bErPKkcWKYg)
