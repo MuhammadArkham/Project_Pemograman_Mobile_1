@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_bg"
+    android:scrollbars="none"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_splash_gradient"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="56dp"
+            android:paddingBottom="72dp">
+
+            <ImageButton
+                android:id="@+id/btn_cancel"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_arrow_back"
+                android:background="@drawable/bg_circle_translucent"
+                android:padding="10dp"
+                app:tint="@color/white"
+                android:contentDescription="Kembali"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/ll_header_text"
+                app:layout_constraintBottom_toBottomOf="@id/ll_header_text" />
+
+            <LinearLayout
+                android:id="@+id/ll_header_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="14dp"
+                app:layout_constraintStart_toEndOf="@id/btn_cancel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_analysis_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/analysis_title"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:includeFontPadding="false" />
+
+                <TextView
+                    android:id="@+id/tv_analysis_subtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/analysis_subtitle"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/fitme_green_border"
+                    android:textSize="12sp"
+                    android:layout_marginTop="2dp" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="-48dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="40dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/fitme_border"
+                app:cardBackgroundColor="@color/white">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp">
+
+                    <ImageView
+                        android:id="@+id/iv_preview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:visibility="gone"
+                        android:contentDescription="Preview makanan"
+                        tools:visibility="visible"/>
+
+                    <LinearLayout
+                        android:id="@+id/tv_placeholder"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:background="?attr/selectableItemBackground"
+                        android:backgroundTint="@color/fitme_surface">
+
+                        <LinearLayout
+                            android:layout_width="72dp"
+                            android:layout_height="72dp"
+                            android:background="@drawable/bg_circle_translucent"
+                            android:backgroundTint="@color/fitme_green_light"
+                            android:gravity="center"
+                            android:layout_marginBottom="14dp">
+                            <ImageView
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:src="@android:drawable/ic_menu_camera"
+                                app:tint="@color/fitme_green"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_placeholder_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/placeholder_title"
+                            android:textColor="@color/fitme_dark_green"
+                            android:fontFamily="@font/poppins_bold"
+                            android:textSize="15sp"/>
+
+                        <TextView
+                            android:id="@+id/tv_placeholder_subtitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/placeholder_subtitle"
+                            android:textColor="@color/fitme_text_secondary"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textSize="13sp"
+                            android:layout_marginTop="4dp"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_change_photo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|end"
+                        android:layout_margin="14dp"
+                        android:text="@string/btn_change_photo"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:background="@drawable/bg_button_dark_green"
+                        android:paddingStart="14dp"
+                        android:paddingEnd="14dp"
+                        android:paddingTop="7dp"
+                        android:paddingBottom="7dp"
+                        android:visibility="gone"
+                        tools:visibility="visible"/>
+                </FrameLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/layout_loading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp"
+                app:strokeWidth="0dp"
+                app:cardBackgroundColor="@color/fitme_green_light"
+                android:layout_marginBottom="16dp"
+                android:visibility="gone">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:padding="20dp">
+                    <ProgressBar
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:indeterminateTint="@color/fitme_green"
+                        android:layout_marginEnd="14dp"/>
+                    <TextView
+                        android:id="@+id/tv_loading_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/loading_analyzing"
+                        android:textColor="@color/fitme_green"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textSize="13sp"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_analyze"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:text="@string/btn_analyze_photo"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:fontFamily="@font/poppins_bold"
+                android:backgroundTint="@color/fitme_green"
+                app:cornerRadius="14dp"
+                android:textAllCaps="false"
+                android:layout_marginBottom="16dp"
+                android:visibility="gone"
+                tools:visibility="visible"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/layout_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/fitme_border"
+                app:cardBackgroundColor="@color/white"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="16dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_result_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:textColor="@color/fitme_text_primary"
+                                android:includeFontPadding="false"
+                                tools:text="Nasi Campur"/>
+
+                            <TextView
+                                android:id="@+id/tv_result_portion"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:fontFamily="@font/poppins_regular"
+                                android:textColor="@color/fitme_text_secondary"
+                                android:layout_marginTop="2dp"
+                                tools:text="1 Porsi"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="end"
+                            android:background="@drawable/bg_circle_translucent"
+                            android:backgroundTint="@color/fitme_surface"
+                            android:paddingStart="14dp"
+                            android:paddingEnd="14dp"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                android:id="@+id/tv_result_cal_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="TOTAL KALORI"
+                                android:textColor="@color/fitme_text_secondary"
+                                android:textSize="9sp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:letterSpacing="0.08"
+                                android:gravity="end"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="bottom">
+                                <TextView
+                                    android:id="@+id/tv_result_calories"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="30sp"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:includeFontPadding="false"
+                                    android:textColor="@color/fitme_green"
+                                    tools:text="550"/>
+                                <TextView
+                                    android:id="@+id/tv_result_cal_unit"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" kkal"
+                                    android:textColor="@color/fitme_text_secondary"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:textSize="12sp"
+                                    android:paddingBottom="5dp"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/fitme_surface"
+                        android:layout_marginBottom="16dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/bg_circle_translucent"
+                        android:backgroundTint="@color/fitme_surface"
+                        android:paddingStart="14dp"
+                        android:paddingEnd="14dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:layout_marginBottom="16dp">
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:src="@drawable/ic_weight"
+                            app:tint="@color/fitme_green"
+                            android:layout_marginEnd="10dp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/label_est_weight"
+                            android:textSize="13sp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textColor="@color/fitme_dark_green"/>
+
+                        <EditText
+                            android:id="@+id/et_weight_gram"
+                            android:layout_width="56dp"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:textAlignment="center"
+                            android:textColor="@color/fitme_green"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:maxLength="4"
+                            android:backgroundTint="@color/fitme_green"
+                            android:paddingBottom="4dp"
+                            tools:text="400"/>
+
+                        <TextView
+                            android:id="@+id/tv_weight_unit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/unit_gram"
+                            android:textSize="13sp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textColor="@color/fitme_dark_green"
+                            android:layout_marginStart="4dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3"
+                        android:layout_marginBottom="16dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center_horizontal"
+                            android:background="@drawable/bg_circle_translucent"
+                            android:backgroundTint="#EBF3FC"
+                            android:paddingTop="14dp"
+                            android:paddingBottom="14dp"
+                            android:layout_marginEnd="6dp">
+
+                            <TextView
+                                android:id="@+id/tv_result_protein_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/macro_protein"
+                                android:textColor="#7099C8"
+                                android:textSize="9sp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:letterSpacing="0.08"
+                                android:layout_marginBottom="4dp"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="bottom">
+                                <TextView
+                                    android:id="@+id/tv_result_protein"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="20sp"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:textColor="#185FA5"
+                                    android:includeFontPadding="false"
+                                    tools:text="20"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="g"
+                                    android:textColor="#80185FA5"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:textSize="11sp"
+                                    android:paddingBottom="2dp"
+                                    android:layout_marginStart="1dp"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center_horizontal"
+                            android:background="@drawable/bg_circle_translucent"
+                            android:backgroundTint="#FEF5E7"
+                            android:paddingTop="14dp"
+                            android:paddingBottom="14dp"
+                            android:layout_marginEnd="6dp">
+
+                            <TextView
+                                android:id="@+id/tv_result_carbs_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/macro_carbs"
+                                android:textColor="#C8A060"
+                                android:textSize="9sp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:letterSpacing="0.08"
+                                android:layout_marginBottom="4dp"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="bottom">
+                                <TextView
+                                    android:id="@+id/tv_result_carbs"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="20sp"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:textColor="#854F0B"
+                                    android:includeFontPadding="false"
+                                    tools:text="70"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="g"
+                                    android:textColor="#80854F0B"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:textSize="11sp"
+                                    android:paddingBottom="2dp"
+                                    android:layout_marginStart="1dp"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center_horizontal"
+                            android:background="@drawable/bg_circle_translucent"
+                            android:backgroundTint="#FCEBF0"
+                            android:paddingTop="14dp"
+                            android:paddingBottom="14dp">
+
+                            <TextView
+                                android:id="@+id/tv_result_fat_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/macro_fat"
+                                android:textColor="#C07090"
+                                android:textSize="9sp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:letterSpacing="0.08"
+                                android:layout_marginBottom="4dp"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="bottom">
+                                <TextView
+                                    android:id="@+id/tv_result_fat"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="20sp"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:textColor="#993556"
+                                    android:includeFontPadding="false"
+                                    tools:text="15"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="g"
+                                    android:textColor="#80993556"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:textSize="11sp"
+                                    android:paddingBottom="2dp"
+                                    android:layout_marginStart="1dp"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_data_source"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:textSize="11sp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textAlignment="center"
+                        android:visibility="gone"
+                        tools:visibility="visible"
+                        tools:text="Estimasi AI edit berat untuk hitung ulang"
+                        tools:textColor="#BA7517"/>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:text="@string/btn_save_log"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:fontFamily="@font/poppins_bold"
+                android:backgroundTint="@color/fitme_green"
+                app:cornerRadius="14dp"
+                app:icon="@drawable/ic_restaurant"
+                app:iconTint="@color/white"
+                app:iconGravity="textStart"
+                android:textAllCaps="false"
+                android:visibility="gone"
+                tools:visibility="visible"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="fitme_green">#068562</color>
+    <color name="fitme_mid_green">#036256</color>
+    <color name="fitme_dark_green">#013F4A</color>
+
+    <color name="fitme_green_light">#E0F0EC</color>
+    <color name="fitme_green_disabled">#9EBEB6</color>
+    <color name="fitme_green_border">#B8D6CE</color>
+
+    <color name="header_text_high_contrast">#CCFFFFFF</color>
+    <color name="header_text_remaining">#E6FFFFFF</color>
+
+    <color name="fitme_bg">#FFFFFF</color>
+    <color name="fitme_surface">#F2F8F6</color>
+    <color name="home_bg">#F4F7F6</color>
+
+    <color name="fitme_text_primary">#1A1A1A</color>
+    <color name="fitme_text_secondary">#013F4A</color>
+    <color name="fitme_text_hint">#9E9E9E</color>
+    <color name="fitme_text_on_primary">#FFFFFF</color>
+
+    <color name="fitme_border">#B8D6CE</color>
+    <color name="fitme_border_active">#068562</color>
+
+    <color name="bmi_underweight">#3D6FFF</color>
+    <color name="bmi_normal">#068562</color>
+    <color name="bmi_overweight">#E8781A</color>
+    <color name="bmi_obese">#D32F2F</color>
+
+    <color name="nav_active">#068562</color>
+    <color name="nav_inactive">#888888</color>
+
+    <color name="fitme_splash_mid">#036256</color>
+    <color name="fitme_splash_avg">#068562</color>
+
+    <!-- Warna cold start splash — solid flat, tidak ada belang saat app launch -->
+    <color name="fitme_splash_cold">#014C43</color>
+</resources>

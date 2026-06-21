@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    activity_profil.xml
+    ====================
+    FIX utama vs versi lama:
+    1. layoutHeader (FrameLayout) dibiarkan tanpa paddingTop.
+       Padding top dinamis (status bar height) diterapkan via Java di ProfilActivity.applyWindowInsets()
+    2. LinearLayout di dalam header diberi id="layoutHeaderInner" agar Java bisa menargetkannya
+    3. NestedScrollView margin top dikurangi ke -24dp (lebih predictable)
+    4. Tombol btnBack di dalam ConstraintLayout agar tidak tergeser
+-->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fitme_surface">
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         HEADER — tinggi 300dp, meluas ke balik status bar
+         paddingTop diset secara programatik di ProfilActivity.java
+         ═══════════════════════════════════════════════════════════════ -->
+    <FrameLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Background image header -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bg_header"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/HeaderCurveStyle"
+            android:contentDescription="@null" />
+
+        <!-- Konten header — paddingTop diisi dari Java -->
+        <LinearLayout
+            android:id="@+id/layoutHeaderInner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingStart="24dp"
+            android:paddingTop="0dp"
+            android:paddingEnd="24dp"
+            android:paddingBottom="24dp">
+
+            <!-- Baris tombol back + judul halaman -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="12dp">
+
+                <ImageButton
+                    android:id="@+id/btnBack"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_arrow_back"
+                    android:background="@drawable/bg_glass_circle"
+                    android:padding="10dp"
+                    android:contentDescription="@string/profil_cd_back"
+                    app:tint="@color/white"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_profil_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/profil_title"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:includeFontPadding="false"
+                    app:layout_constraintStart_toEndOf="@id/btnBack"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginStart="12dp"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- Avatar + Nama + Ringkasan -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <!-- Avatar circle -->
+                <FrameLayout
+                    android:id="@+id/frameAvatar"
+                    android:layout_width="76dp"
+                    android:layout_height="76dp"
+                    android:layout_marginEnd="16dp"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:cardCornerRadius="38dp"
+                        app:cardElevation="0dp"
+                        app:strokeWidth="2dp"
+                        app:strokeColor="#40FFFFFF"
+                        app:cardBackgroundColor="@color/fitme_green_light">
+
+                        <ImageView
+                            android:id="@+id/ivProfilePhoto"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/img_male_character"
+                            android:contentDescription="@string/profil_cd_gender_icon"
+                            android:scaleType="centerCrop" />
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <!-- Ikon kamera kecil di pojok kanan bawah -->
+                    <LinearLayout
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="bottom|end"
+                        android:background="@drawable/bg_circle_translucent"
+                        android:backgroundTint="@color/fitme_dark_green"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="13dp"
+                            android:layout_height="13dp"
+                            android:src="@drawable/ic_camera"
+                            app:tint="@color/white"
+                            android:contentDescription="@null" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <!-- Nama, gender, fisik -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <!-- Nama + icon edit (clickable) -->
+                    <LinearLayout
+                        android:id="@+id/layoutEditName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="3dp"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <TextView
+                            android:id="@+id/tvUserName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:text="Pengguna FitMe"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/poppins_bold" />
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_marginStart="7dp"
+                            android:src="@drawable/ic_edit"
+                            app:tint="#99FFFFFF"
+                            android:contentDescription="@null" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvUserSummary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="Pria · 21 Tahun"
+                        android:textColor="@color/fitme_green_light"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="12sp"
+                        android:layout_marginBottom="2dp"/>
+
+                    <TextView
+                        android:id="@+id/tvUserPhysical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="70 kg  |  175 cm"
+                        android:textColor="#CCFFFFFF"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="11sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         KONTEN SCROLL — overlap ke header
+         ═══════════════════════════════════════════════════════════════ -->
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="-64dp"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:clipToPadding="false"
+        app:layout_constraintTop_toBottomOf="@id/layoutHeader"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="48dp">
+
+            <!-- ─── CARD UTAMA: BMI + Stats ───────────────────────────── -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mainProfileCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- BMI Section Header -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:padding="20dp">
+
+                        <!-- Icon BMI -->
+                        <LinearLayout
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:background="@drawable/bg_bmi_icon_box"
+                            android:gravity="center"
+                            android:layout_marginEnd="16dp">
+                            <ImageView
+                                android:layout_width="26dp"
+                                android:layout_height="26dp"
+                                android:src="@drawable/body_mass_index"
+                                app:tint="@color/fitme_dark_green" />
+                        </LinearLayout>
+
+                        <!-- Label + Nilai BMI -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/tv_bmi_section_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/profil_bmi_section"
+                                android:textColor="@color/fitme_dark_green"
+                                android:textSize="10sp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:letterSpacing="0.08" />
+                            <TextView
+                                android:id="@+id/tvBmiValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                tools:text="19.3"
+                                android:textColor="@color/fitme_text_primary"
+                                android:fontFamily="@font/poppins_bold"
+                                android:textSize="28sp"
+                                android:includeFontPadding="false" />
+                        </LinearLayout>
+
+                        <!-- Badge kategori BMI -->
+                        <TextView
+                            android:id="@+id/tvBmiCategory"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:text="Normal"
+                            android:textSize="12sp"
+                            android:textColor="@color/fitme_dark_green"
+                            android:fontFamily="@font/poppins_bold"
+                            android:background="@drawable/bg_badge_pill"
+                            android:backgroundTint="@color/fitme_green_light"
+                            android:paddingStart="14dp"
+                            android:paddingEnd="14dp"
+                            android:paddingTop="6dp"
+                            android:paddingBottom="6dp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/fitme_surface"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"/>
+
+                    <!-- Row 1: Berat | Tinggi -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <!-- Berat -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:padding="20dp">
+                            <ImageView
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:src="@drawable/ic_weight"
+                                app:tint="@color/fitme_dark_green"
+                                android:layout_marginBottom="6dp" />
+                            <TextView
+                                android:id="@+id/tv_weight_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/profil_label_weight"
+                                android:fontFamily="@font/poppins_regular"
+                                android:textColor="@color/fitme_text_hint"
+                                android:textSize="11sp" />
+                            <TextView
+                                android:id="@+id/tvWeightValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                tools:text="59 kg"
+                                android:textColor="@color/fitme_text_primary"
+                                android:fontFamily="@font/poppins_bold"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/fitme_surface" />
+
+                        <!-- Tinggi -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:padding="20dp">
+                            <ImageView
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:src="@drawable/ic_height"
+                                app:tint="@color/fitme_dark_green"
+                                android:layout_marginBottom="6dp" />
+                            <TextView
+                                android:id="@+id/tv_height_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/profil_label_height"
+                                android:fontFamily="@font/poppins_regular"
+                                android:textColor="@color/fitme_text_hint"
+                                android:textSize="11sp" />
+                            <TextView
+                                android:id="@+id/tvHeightValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                tools:text="175 cm"
+                                android:textColor="@color/fitme_text_primary"
+                                android:fontFamily="@font/poppins_bold"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/fitme_surface"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"/>
+
+                    <!-- Row 2: Usia | Target Kalori -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <!-- Usia -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:padding="20dp">
+                            <ImageView
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:src="@drawable/ic_age_clock"
+                                app:tint="@color/fitme_dark_green"
+                                android:layout_marginBottom="6dp" />
+                            <TextView
+                                android:id="@+id/tv_age_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/profil_label_age"
+                                android:fontFamily="@font/poppins_regular"
+                                android:textColor="@color/fitme_text_hint"
+                                android:textSize="11sp" />
+                            <TextView
+                                android:id="@+id/tvAgeValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                tools:text="20 thn"
+                                android:textColor="@color/fitme_text_primary"
+                                android:fontFamily="@font/poppins_bold"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/fitme_surface" />
+
+                        <!-- Target Kalori (TDEE) -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:padding="20dp">
+                            <ImageView
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:src="@drawable/ic_restaurant"
+                                app:tint="@color/fitme_dark_green"
+                                android:layout_marginBottom="6dp" />
+                            <TextView
+                                android:id="@+id/tv_target_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/profil_label_target"
+                                android:fontFamily="@font/poppins_regular"
+                                android:textColor="@color/fitme_text_hint"
+                                android:textSize="11sp" />
+                            <TextView
+                                android:id="@+id/tvTdeeValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                tools:text="2185 kkal"
+                                android:textColor="@color/fitme_text_primary"
+                                android:fontFamily="@font/poppins_bold"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- ─── TOMBOL UPDATE DATA ─────────────────────────────────── -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btnUpdateData"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="0dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardBackgroundColor="@color/fitme_green">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingStart="24dp"
+                    android:paddingEnd="24dp">
+                    
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_sync"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="16dp"
+                        android:text="@string/profil_btn_update"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/poppins_bold" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_chevron_right"
+                        app:tint="@color/white" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- ─── TOMBOL RESET ───────────────────────────────────────── -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btnReset"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="0dp"
+                app:strokeWidth="1.5dp"
+                app:strokeColor="#FF5C5C"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardBackgroundColor="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingStart="24dp"
+                    android:paddingEnd="24dp">
+                    
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_delete"
+                        app:tint="#FF5C5C" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="16dp"
+                        android:text="@string/profil_btn_reset"
+                        android:textColor="#FF5C5C"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/poppins_bold" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_chevron_right"
+                        app:tint="#FF5C5C" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

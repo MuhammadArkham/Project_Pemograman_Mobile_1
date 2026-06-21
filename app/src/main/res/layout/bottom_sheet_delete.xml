@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_bottom_sheet"
+    android:orientation="vertical"
+    android:paddingBottom="32dp"
+    android:paddingEnd="24dp"
+    android:paddingStart="24dp"
+    android:paddingTop="12dp">
+
+    <View
+        android:layout_width="36dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp"
+        android:background="#D6EDE7"
+        android:backgroundTint="#E8F1EF" />
+
+    <TextView
+        android:id="@+id/tvDeleteTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Hapus pengukuran ini?"
+        android:textColor="#044A3A"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvDeleteSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Data tidak bisa dikembalikan setelah dihapus."
+        android:textColor="#6B9B8E"
+        android:textSize="14sp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutDeletePreview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/bg_delete_preview_card"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvDeleteBmi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:includeFontPadding="false"
+            android:textColor="#097969"
+            android:textSize="28sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="22.5" />
+
+        <TextView
+            android:id="@+id/tvDeleteRange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/bg_badge_pill"
+            android:fontFamily="@font/poppins_bold"
+            android:includeFontPadding="false"
+            android:paddingBottom="5dp"
+            android:paddingEnd="12dp"
+            android:paddingStart="12dp"
+            android:paddingTop="5dp"
+            android:textColor="#FFFFFF"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvDeleteBmi"
+            app:layout_constraintStart_toEndOf="@+id/tvDeleteBmi"
+            app:layout_constraintTop_toTopOf="@+id/tvDeleteBmi"
+            tools:text="Normal" />
+
+        <TextView
+            android:id="@+id/tvDeleteMeta"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="#6B9B8E"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDeleteBmi"
+            tools:text="12 Mei 2026 • 65 kg" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDeleteCancel"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginEnd="12dp"
+            android:layout_weight="1"
+            android:backgroundTint="#F0F5F2"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Batal"
+            android:textAllCaps="false"
+            android:textColor="#044A3A"
+            android:textSize="15sp"
+            app:cornerRadius="16dp"
+            app:elevation="0dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDeleteConfirm"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:backgroundTint="#E24B4A"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Hapus"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            app:cornerRadius="16dp"
+            app:elevation="0dp" />
+    </LinearLayout>
+
+</LinearLayout>

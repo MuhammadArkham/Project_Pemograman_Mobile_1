@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    HISTORY ITEM — Flat Card Design
+    Referensi: Samsung Health, Garmin Connect, Whoop
+    Prinsip: 1 card, clear zones: Header | Body (BMI gauge + stats 2x2) | Footer actions
+    NO nested card whatsoever.
+-->
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="14dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="0dp"
+    app:strokeColor="#EDF2F0"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- ══════════════════ HEADER ══════════════════ -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp"
+            android:paddingTop="14dp"
+            android:paddingBottom="10dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvItemDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="6dp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="#8AA79F"
+                android:textSize="12sp"
+                tools:text="Jumat, 22 Mei 2026" />
+
+            <TextView
+                android:id="@+id/tvBadgeNew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_pill_soft"
+                android:backgroundTint="#E1F5EE"
+                android:fontFamily="@font/poppins_bold"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="4dp"
+                android:textColor="#0F6E56"
+                android:textSize="10sp"
+                android:visibility="gone"
+                tools:text="Terbaru" />
+
+            <TextView
+                android:id="@+id/tvBadgeRange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_pill_soft"
+                android:fontFamily="@font/poppins_bold"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="5dp"
+                android:textColor="#FFFFFF"
+                android:textSize="11sp"
+                tools:text="Normal" />
+        </LinearLayout>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F0F6F4" />
+
+        <!-- ══════════════════ BODY ══════════════════ -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:gravity="center_vertical">
+
+            <!-- BMI Score (left side) -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/tvItemBmi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:includeFontPadding="false"
+                    android:textSize="42sp"
+                    android:textColor="#097969"
+                    tools:text="22.3" />
+
+                <TextView
+                    android:id="@+id/tvBmiLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:letterSpacing="0.08"
+                    android:text="INDEKS BMI"
+                    android:textColor="#B2CCCA"
+                    android:textSize="8sp" />
+            </LinearLayout>
+
+            <!-- Divider vertikal -->
+            <View
+                android:id="@+id/vDividerVertical"
+                android:layout_width="1dp"
+                android:layout_height="56dp"
+                android:layout_marginHorizontal="16dp"
+                android:background="#EDF2F0" />
+
+            <!-- Stats Grid 2x2 -->
+            <LinearLayout
+                android:id="@+id/layoutPhysical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!-- Row 1: Berat + Tinggi -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="12dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Berat"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textColor="#9DB5AF"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvItemWeight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_bold"
+                            android:textColor="#0D3D30"
+                            android:textSize="14sp"
+                            tools:text="65 kg" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tinggi"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textColor="#9DB5AF"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvItemHeight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_bold"
+                            android:textColor="#0D3D30"
+                            android:textSize="14sp"
+                            tools:text="170 cm" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Row 2: Usia + Gender -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Usia"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textColor="#9DB5AF"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvItemAge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_bold"
+                            android:textColor="#0D3D30"
+                            android:textSize="14sp"
+                            tools:text="25 Thn" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kelamin"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textColor="#9DB5AF"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tvItemGender"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_bold"
+                            android:textColor="#0D3D30"
+                            android:textSize="14sp"
+                            tools:text="Pria" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Divider -->
+        <View
+            android:id="@+id/vDividerHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F0F6F4" />
+
+        <!-- ══════════════════ FOOTER ══════════════════ -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/btnDetail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackground"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center"
+                android:paddingVertical="13dp"
+                android:text="@string/btn_view_detail"
+                android:textColor="@color/fitme_green"
+                android:textSize="13sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="24dp"
+                android:background="#EDF2F0" />
+
+            <ImageButton
+                android:id="@+id/btnDelete"
+                android:layout_width="56dp"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="@string/btn_delete"
+                android:padding="13dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_delete"
+                app:tint="#DC2626" />
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

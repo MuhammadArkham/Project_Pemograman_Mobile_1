@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    FOOD LOG ITEM — Flat Row Design
+    Referensi: MyFitnessPal (2024), Lifesum, Cronometer
+    Prinsip: NO nested card. Thumbnail = rounded ImageView dengan clipToOutline.
+    Layout: [Thumbnail 52dp] | [Nama + Waktu + Macros] | [Kalori] | [Hapus]
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:gravity="center_vertical">
+
+    <!-- ─── THUMBNAIL — rounded clip, NO nested card ─── -->
+    <FrameLayout
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:background="@drawable/bg_thumb_rounded"
+        android:backgroundTint="#EAF4F1"
+        android:clipToOutline="true">
+
+        <ImageView
+            android:id="@+id/iv_food_thumb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:contentDescription="@null"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_food_emoji"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="24sp"
+            tools:text="🥗" />
+    </FrameLayout>
+
+    <!-- ─── CONTENT ─── -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="14dp"
+        android:orientation="vertical">
+
+        <!-- Nama Makanan -->
+        <TextView
+            android:id="@+id/tv_food_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins_bold"
+            android:maxLines="2"
+            android:lineSpacingMultiplier="1.1"
+            android:textColor="#0D3D30"
+            android:textSize="13sp"
+            tools:text="Nasi Goreng Spesial" />
+
+        <!-- Waktu Makan -->
+        <TextView
+            android:id="@+id/tv_food_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="#9DB5AF"
+            android:textSize="11sp"
+            tools:text="15:33" />
+
+        <!-- ─── MACRO PILLS — single row ─── -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal">
+
+            <!-- Protein -->
+            <TextView
+                android:id="@+id/tv_macro_p"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/bg_pill_soft"
+                android:backgroundTint="#E5EFFC"
+                android:fontFamily="@font/poppins_bold"
+                android:paddingHorizontal="7dp"
+                android:paddingVertical="2dp"
+                android:textColor="#2563EB"
+                android:textSize="9sp"
+                tools:text="P 22g" />
+
+            <!-- Karbo -->
+            <TextView
+                android:id="@+id/tv_macro_k"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/bg_pill_soft"
+                android:backgroundTint="#FEF3E2"
+                android:fontFamily="@font/poppins_bold"
+                android:paddingHorizontal="7dp"
+                android:paddingVertical="2dp"
+                android:textColor="#D97706"
+                android:textSize="9sp"
+                tools:text="K 33g" />
+
+            <!-- Lemak -->
+            <TextView
+                android:id="@+id/tv_macro_l"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_pill_soft"
+                android:backgroundTint="#FEE9E9"
+                android:fontFamily="@font/poppins_bold"
+                android:paddingHorizontal="7dp"
+                android:paddingVertical="2dp"
+                android:textColor="#DC2626"
+                android:textSize="9sp"
+                tools:text="L 7g" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- ─── KALORI ─── -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_food_calories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:includeFontPadding="false"
+            android:textColor="#097969"
+            android:textSize="20sp"
+            tools:text="450" />
+
+        <TextView
+            android:id="@+id/tv_food_cal_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-3dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="#9DB5AF"
+            android:textSize="9sp"
+            android:gravity="center"
+            tools:text="kkal" />
+    </LinearLayout>
+
+    <!-- ─── HAPUS ─── -->
+    <ImageButton
+        android:id="@+id/btn_delete"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="@drawable/bg_pill_soft"
+        android:backgroundTint="#FEE9E9"
+        android:contentDescription="@string/btn_delete"
+        android:padding="9dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_delete"
+        app:tint="#DC2626" />
+
+</LinearLayout>

@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_bottom_sheet"
+    android:orientation="vertical"
+    android:paddingBottom="32dp"
+    android:paddingEnd="24dp"
+    android:paddingStart="24dp"
+    android:paddingTop="12dp">
+
+    <View
+        android:layout_width="36dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp"
+        android:background="#D6EDE7"
+        android:backgroundTint="#E8F1EF" />
+
+    <TextView
+        android:id="@+id/lblDetailScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:letterSpacing="0.06"
+        android:text="SKOR BMI"
+        android:textColor="#6B9B8E"
+        android:textSize="10sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvDetailBmi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_bold"
+            android:includeFontPadding="false"
+            android:textColor="#097969"
+            android:textSize="48sp"
+            tools:text="22.5" />
+
+        <TextView
+            android:id="@+id/tvDetailCat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_badge_pill"
+            android:fontFamily="@font/poppins_bold"
+            android:paddingBottom="5dp"
+            android:paddingEnd="12dp"
+            android:paddingStart="12dp"
+            android:paddingTop="5dp"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            tools:text="Normal" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="20dp"
+        android:background="#E8F1EF" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <LinearLayout
+            android:id="@+id/cellWeight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_detail_cell"
+            android:orientation="vertical"
+            android:padding="12dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/lblDetailWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:letterSpacing="0.06"
+                android:text="BERAT"
+                android:textColor="#6B9B8E"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tvDetailWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="#044A3A"
+                android:textSize="16sp"
+                tools:text="65 kg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cellHeight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:background="@drawable/bg_detail_cell"
+            android:orientation="vertical"
+            android:padding="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/cellWeight"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/guideline_center"
+            app:layout_constraintTop_toTopOf="@+id/cellWeight">
+
+            <TextView
+                android:id="@+id/lblDetailHeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:letterSpacing="0.06"
+                android:text="TINGGI"
+                android:textColor="#6B9B8E"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tvDetailHeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="#044A3A"
+                android:textSize="16sp"
+                tools:text="170 cm" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cellAge"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_detail_cell"
+            android:orientation="vertical"
+            android:padding="12dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cellWeight">
+
+            <TextView
+                android:id="@+id/lblDetailAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:letterSpacing="0.06"
+                android:text="USIA"
+                android:textColor="#6B9B8E"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tvDetailAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="#044A3A"
+                android:textSize="16sp"
+                tools:text="25 thn" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cellGender"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:background="@drawable/bg_detail_cell"
+            android:orientation="vertical"
+            android:padding="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/cellAge"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/guideline_center"
+            app:layout_constraintTop_toTopOf="@+id/cellAge">
+
+            <TextView
+                android:id="@+id/lblDetailGenderLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:letterSpacing="0.06"
+                android:text="GENDER"
+                android:textColor="#6B9B8E"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tvDetailGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="#044A3A"
+                android:textSize="16sp"
+                tools:text="Pria" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cellIdeal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_detail_cell_green"
+            android:orientation="vertical"
+            android:padding="12dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cellAge">
+
+            <TextView
+                android:id="@+id/lblDetailIdeal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:letterSpacing="0.06"
+                android:text="BERAT IDEAL"
+                android:textColor="#1D9E75"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tvDetailIdeal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="#097969"
+                android:textSize="14sp"
+                tools:text="55 - 65 kg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cellDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:background="@drawable/bg_detail_cell"
+            android:orientation="vertical"
+            android:padding="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/cellIdeal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/guideline_center"
+            app:layout_constraintTop_toTopOf="@+id/cellIdeal">
+
+            <TextView
+                android:id="@+id/lblDetailDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:letterSpacing="0.06"
+                android:text="TANGGAL"
+                android:textColor="#6B9B8E"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tvDetailDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="#044A3A"
+                android:textSize="14sp"
+                tools:text="12 Mei 2026" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnDetailClose"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:backgroundTint="#044A3A"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Tutup"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:cornerRadius="16dp"
+        app:elevation="0dp" />
+
+</LinearLayout>

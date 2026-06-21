@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_bottom_sheet"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="40dp">
+
+    <View
+        android:layout_width="36dp"
+        android:layout_height="4dp"
+        android:background="#D6EDE7"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/tvDialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Masukkan Data"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="18sp"
+        android:textColor="@color/fitme_dark_green"
+        android:layout_marginBottom="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_field_icon_empty"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="24dp">
+
+        <EditText
+            android:id="@+id/etDialogInput"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/fitme_green"
+            android:textSize="18sp"
+            android:inputType="numberDecimal"
+            android:hint="0"
+            android:textColorHint="@color/fitme_text_hint"
+            android:maxLines="1"
+            android:imeOptions="actionDone"/>
+
+        <TextView
+            android:id="@+id/tvDialogUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kg"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/fitme_dark_green"
+            android:textSize="14sp"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDialogCancel"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="@string/dialog_cancel"
+            android:textColor="@color/fitme_dark_green"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            app:cornerRadius="16dp"
+            app:backgroundTint="@color/fitme_green_light"
+            app:elevation="0dp"
+            android:layout_marginEnd="8dp"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDialogSave"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="@string/dialog_save"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            app:cornerRadius="16dp"
+            app:backgroundTint="@color/fitme_green"
+            app:elevation="0dp"
+            android:clickable="true"
+            android:focusable="true"/>
+    </LinearLayout>
+
+</LinearLayout>

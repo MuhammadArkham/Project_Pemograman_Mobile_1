@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_bg">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/bg_header_food"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="@id/header"
+        app:layout_constraintBottom_toBottomOf="@id/header"
+        android:importantForAccessibility="no" />
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:orientation="vertical"
+        android:paddingStart="22dp"
+        android:paddingEnd="22dp"
+        android:paddingTop="56dp"
+        android:paddingBottom="54dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_page_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_food"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:includeFontPadding="false"
+                    android:fontFamily="@font/poppins_bold"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card_translucent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_cal_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cal_consumed"
+                        android:textColor="@color/header_text_high_contrast"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="10sp"
+                        android:layout_marginBottom="2dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="bottom">
+                        <TextView
+                            android:id="@+id/tv_total_calories"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:text="0"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/poppins_bold"
+                            android:textSize="40sp"
+                            android:includeFontPadding="false"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/food_calories"
+                            android:textColor="@color/header_text_high_contrast"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textSize="12sp"
+                            android:paddingBottom="6dp"
+                            android:layout_marginStart="4dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="end">
+
+                    <TextView
+                        android:id="@+id/tv_target_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/daily_target"
+                        android:textColor="@color/header_text_high_contrast"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="10sp"
+                        android:layout_marginBottom="2dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_target_calories"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="1.800"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textSize="14sp"
+                        android:layout_marginBottom="4dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_remaining"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="Sisa 500 kkal"
+                        android:textColor="@color/header_text_remaining"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textSize="11sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progress_calories"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:max="1800"
+                android:progress="0"
+                android:progressDrawable="@drawable/progress_bar_drawable"
+                android:layout_marginBottom="14dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:background="@drawable/bg_macro_card"
+                    android:orientation="vertical" android:padding="10dp" android:layout_marginEnd="5dp">
+                    <TextView android:id="@+id/tv_protein_label" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="@string/macro_protein" android:textColor="@color/fitme_green_border" android:textSize="9sp"
+                        android:fontFamily="@font/poppins_bold" android:letterSpacing="0.08" android:layout_marginBottom="4dp"/>
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:gravity="bottom">
+                        <TextView android:id="@+id/tv_protein" android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:text="0"
+                            android:fontFamily="@font/poppins_bold" android:textColor="@color/white" android:textSize="16sp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text=" g" android:textColor="@color/header_text_high_contrast" android:textSize="11sp"
+                            android:fontFamily="@font/poppins_regular" android:paddingBottom="2dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:background="@drawable/bg_macro_card"
+                    android:orientation="vertical" android:padding="10dp" android:layout_marginEnd="5dp">
+                    <TextView android:id="@+id/tv_karbo_label" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="@string/macro_carbs" android:textColor="@color/fitme_green_border" android:textSize="9sp"
+                        android:fontFamily="@font/poppins_bold" android:letterSpacing="0.08" android:layout_marginBottom="4dp"/>
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:gravity="bottom">
+                        <TextView android:id="@+id/tv_karbo" android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:text="0"
+                            android:fontFamily="@font/poppins_bold" android:textColor="@color/white" android:textSize="16sp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text=" g" android:textColor="@color/header_text_high_contrast" android:textSize="11sp"
+                            android:fontFamily="@font/poppins_regular" android:paddingBottom="2dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:background="@drawable/bg_macro_card"
+                    android:orientation="vertical" android:padding="10dp">
+                    <TextView android:id="@+id/tv_lemak_label" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="@string/macro_fat" android:textColor="@color/fitme_green_border" android:textSize="9sp"
+                        android:fontFamily="@font/poppins_bold" android:letterSpacing="0.08" android:layout_marginBottom="4dp"/>
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:gravity="bottom">
+                        <TextView android:id="@+id/tv_lemak" android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:text="0"
+                            android:fontFamily="@font/poppins_bold" android:textColor="@color/white" android:textSize="16sp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text=" g" android:textColor="@color/header_text_high_contrast" android:textSize="11sp"
+                            android:fontFamily="@font/poppins_regular" android:paddingBottom="2dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:fillViewport="true"
+        android:layout_marginTop="-24dp"
+        android:clipToPadding="false"
+        android:paddingBottom="160dp"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_content_round_top"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="24dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_food_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/fitme_border"
+                app:cardBackgroundColor="@color/white"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/tv_item_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        tools:text="0 makanan hari ini"
+                        android:textColor="@color/fitme_dark_green"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textSize="15sp"
+                        android:layout_marginBottom="8dp"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_food_log"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false"
+                        android:clipToPadding="false"
+                        android:overScrollMode="never"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:id="@+id/layout_empty_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingTop="30dp"
+                android:paddingBottom="24dp"
+                android:layout_marginBottom="80dp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/img_empty_food"
+                    android:scaleType="fitCenter"
+                    android:layout_marginBottom="4dp"/>
+
+                <TextView
+                    android:id="@+id/tv_empty_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:textAlignment="center"
+                    android:text="@string/food_empty"
+                    android:textColor="@color/fitme_dark_green"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <FrameLayout
+        android:id="@+id/layoutBottomNavContainer"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@android:color/transparent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.fitme.app.ui.home.CurvedBottomBarBg
+            android:id="@+id/curvedBg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"/>
+
+        <LinearLayout
+            android:id="@+id/navBar"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:elevation="0dp"
+            android:clipChildren="false"
+            android:clipToPadding="false">
+
+            <LinearLayout android:id="@+id/btnNavHome"
+                android:layout_width="0dp" android:layout_height="match_parent"
+                android:layout_weight="1" android:gravity="center" android:orientation="vertical"
+                android:clickable="true" android:focusable="true"
+                android:background="?attr/selectableItemBackgroundBorderless">
+                <ImageView android:id="@+id/icNavHome"
+                    android:layout_width="22dp" android:layout_height="22dp"
+                    android:src="@drawable/ic_home" app:tint="@color/nav_inactive"/>
+                <TextView android:id="@+id/tvNavHome"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/nav_home" android:textSize="10sp" android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/nav_inactive" android:layout_marginTop="2dp"/>
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/btnNavMakan"
+                android:layout_width="0dp" android:layout_height="match_parent"
+                android:layout_weight="1" android:gravity="center" android:orientation="vertical"
+                android:clickable="true" android:focusable="true"
+                android:background="?attr/selectableItemBackgroundBorderless">
+                <ImageView android:id="@+id/icNavMakan"
+                    android:layout_width="22dp" android:layout_height="22dp"
+                    android:src="@drawable/ic_restaurant" app:tint="#00000000"/>
+                <TextView android:id="@+id/tvNavMakan"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/nav_food" android:textSize="10sp" android:fontFamily="@font/poppins_bold"
+                    android:textColor="@color/fitme_green" android:layout_marginTop="2dp"/>
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/btnNavHistory"
+                android:layout_width="0dp" android:layout_height="match_parent"
+                android:layout_weight="1" android:gravity="center" android:orientation="vertical"
+                android:clickable="true" android:focusable="true"
+                android:background="?attr/selectableItemBackgroundBorderless">
+                <ImageView android:id="@+id/icNavHistory"
+                    android:layout_width="22dp" android:layout_height="22dp"
+                    android:src="@drawable/ic_history" app:tint="@color/nav_inactive"/>
+                <TextView android:id="@+id/tvNavHistory"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/nav_history" android:textSize="10sp" android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/nav_inactive" android:layout_marginTop="2dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/navIndicator"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_gravity="top|start"
+            app:cardBackgroundColor="@color/fitme_green"
+            app:cardCornerRadius="26dp"
+            app:cardElevation="0dp">
+            <ImageView android:id="@+id/icNavFloating"
+                android:layout_width="22dp" android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_restaurant" app:tint="@color/white"/>
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+
+    <!-- Redesigned Add Food FAB -->
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fab_add_food"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="110dp"
+        android:text="@string/btn_add_food"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:fontFamily="@font/poppins_bold"
+        app:icon="@drawable/ic_camera"
+        app:iconTint="@color/white"
+        app:backgroundTint="@color/fitme_green"
+        app:elevation="8dp"
+        app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
