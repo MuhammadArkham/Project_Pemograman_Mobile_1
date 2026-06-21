@@ -1,21 +1,7 @@
 <div align="center">
-  <img src="FOTO%20PROJECT/CP.png" alt="Cover Photo" width="800">
   <h1>FITME - Aplikasi Kalkulator BMI</h1>
-  <p>Tugas Mata Kuliah Pemrograman Mobile 1</p>
+  <p>Tugas Mata Kuliah Pemrograman Mobile 2</p>
 </div>
-
----
-
-## Daftar Isi
-- [Identitas Mahasiswa](#identitas-mahasiswa)
-- [1. Splash Screen](#1-splash-screen)
-- [2. StoryBoard Project](#2-storyboard-project)
-- [3. Mockup Project](#3-mockup-project)
-- [4. UI (User Interface) Project](#4-ui-user-interface-project)
-- [5. UX (User Experience) Video Prototype Project](#5-ux-user-experience-video-prototype-project)
-- [6. Link Jadwal pada ClickUp](#6-link-jadwal-pada-clickup)
-- [7. Notifikasi Firebase](#7-notifikasi-firebase)
-- [8. Implementasi Android Studio](#8-implementasi-android-studio)
 
 ---
 
@@ -26,8 +12,21 @@
 | **Nama** | Muhammad Arkhamullah Rifai Asshidiq |
 | **NIM** | 312410545 |
 | **Kelas** | TI.24.A.5 |
-| **Matakuliah** | Pemrograman Mobile 1 |
+| **Matakuliah** | Pemrograman Mobile 2 |
 | **Dosen Pengampu** | Donny Maulana, S.Kom., M.M.S.I. |
+
+---
+
+## Daftar Isi
+- [Identitas Mahasiswa](#identitas-mahasiswa)
+- [1. Splash Screen](#1-splash-screen)
+- [2. StoryBoard Project](#2-storyboard-project)
+- [3. Mockup Project](#3-mockup-project)
+- [4. UI (User Interface) Project & Color Palette](#4-ui-user-interface-project--color-palette)
+- [5. UX (User Experience) Video Prototype Project](#5-ux-user-experience-video-prototype-project)
+- [6. Link Jadwal pada ClickUp](#6-link-jadwal-pada-clickup)
+- [7. Notifikasi Firebase](#7-notifikasi-firebase)
+- [8. Implementasi Android Studio](#8-implementasi-android-studio)
 
 ---
 
@@ -89,10 +88,13 @@
 
 ---
 
-## 4. UI (User Interface) Project
+## 4. UI (User Interface) Project & Color Palette
 
 <div align="center">
   <img src="FOTO%20PROJECT/UI.png" alt="UI Project" width="800">
+  <br><br>
+  <b>Color Palette</b><br>
+  <img src="FOTO%20PROJECT/CP.png" alt="Color Palette" width="800">
 </div>
 
 ---
