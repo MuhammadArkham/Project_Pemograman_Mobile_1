@@ -34,7 +34,7 @@
 *(Deteksi location, Bendera, Say Hello/Selamat Datang sesuai lokasi daerah masing-masing)*
 
 <div align="center">
-  <img src="FOTO%20PROJECT/Screenshot%202026-01-12%20153656.png" alt="Splash Screen" width="300">
+  <img src="FOTO%20PROJECT/CP.png" alt="Splash Screen" width="300">
 </div>
 
 ---
@@ -83,7 +83,7 @@
 ## 3. Mockup Project
 
 <div align="center">
-  <img src="FOTO%20PROJECT/Screenshot%202025-12-19%20002725.png" alt="Mockup Project" width="800">
+  <img src="FOTO%20PROJECT/Mockup.png" alt="Mockup Project" width="800">
 </div>
 
 ---
@@ -91,8 +91,7 @@
 ## 4. UI (User Interface) Project
 
 <div align="center">
-  <img src="FOTO%20PROJECT/Screenshot%202025-12-19%20003935.png" alt="UI Project 1" width="400">
-  <img src="FOTO%20PROJECT/e51c9953-e50d-4bf4-8512-7d1d7e2e4a21.png" alt="UI Project 2" width="400">
+  <img src="FOTO%20PROJECT/UI.png" alt="UI Project" width="800">
 </div>
 
 ---
