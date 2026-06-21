@@ -3,6 +3,21 @@
   <p>Tugas Mata Kuliah Pemrograman Mobile 1</p>
 </div>
 
+---
+
+## 📑 Daftar Isi
+- [👤 Identitas Mahasiswa](#-identitas-mahasiswa)
+- [📸 1. Splash Screen](#-1-splash-screen)
+- [📖 2. StoryBoard Project](#-2-storyboard-project)
+- [🎨 3. Mockup Project](#-3-mockup-project)
+- [🖥️ 4. UI (User Interface) Project](#️-4-ui-user-interface-project)
+- [🎬 5. UX (User Experience) Video Prototype Project](#-5-ux-user-experience-video-prototype-project)
+- [📅 6. Link Jadwal pada ClickUp](#-6-link-jadwal-pada-clickup)
+- [🔔 7. Notifikasi Firebase](#-7-notifikasi-firebase)
+- [📱 8. Implementasi Android Studio](#-8-implementasi-android-studio)
+
+---
+
 ## 👤 Identitas Mahasiswa
 
 | Informasi | Keterangan |
