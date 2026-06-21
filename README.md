@@ -11,7 +11,7 @@
 | :--- | :--- |
 | **Nama** | Muhammad Arkhamullah Rifai Asshidiq |
 | **NIM** | 312410545 |
-| **Kelas** | TI.24.A.5 |
+| **Kelas** | I241E |
 | **Matakuliah** | Pemrograman Mobile 2 |
 | **Dosen Pengampu** | Donny Maulana, S.Kom., M.M.S.I. |
 
