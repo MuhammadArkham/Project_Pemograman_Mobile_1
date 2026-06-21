@@ -135,15 +135,34 @@ https://github.com/user-attachments/assets/75013bff-7b4d-49b4-b8f8-ae11bcdf28c1
 
 ## 8. Implementasi Android Studio
 
-<table>
-  <tr>
-    <td align="center"><b>Tampilan Splashscreen</b><br><img src="FOTO%20PROJECT/Screenshot%202026-01-15%20211819.png" width="200"></td>
-    <td align="center"><b>Tampilan Home (Dashboard)</b><br><img src="FOTO%20PROJECT/Screenshot%202026-01-15%20211844.png" width="200"></td>
-    <td align="center"><b>Tampilan Gender Selection</b><br><img src="FOTO%20PROJECT/Screenshot%202026-01-15%20211557.png" width="200"></td>
-  </tr>
-  <tr>
-    <td align="center"><b>Tampilan Input Data</b><br><img src="FOTO%20PROJECT/Screenshot%202026-01-15%20211751.png" width="200"></td>
-    <td align="center"><b>Tampilan Result</b><br><img src="FOTO%20PROJECT/Screenshot%202026-01-15%20211808.png" width="200"></td>
-    <td align="center"><b>Tampilan Riwayat</b><br><img src="FOTO%20PROJECT/Screenshot%202026-01-15%20211620.png" width="200"></td>
-  </tr>
-</table>
+Berikut adalah penjelasan dan tampilan masing-masing UI (User Interface) yang telah diimplementasikan ke dalam Android Studio:
+
+### 8.1 Tampilan Splashscreen
+<img src="FOTO%20PROJECT/Screenshot%202026-01-15%20211819.png" width="250">
+
+**Keterangan:** Tampilan awal saat aplikasi FITME baru dibuka. Berisi logo aplikasi dengan animasi transisi yang halus sebelum pengguna masuk ke menu utama.
+
+### 8.2 Tampilan Home (Dashboard)
+<img src="FOTO%20PROJECT/Screenshot%202026-01-15%20211844.png" width="250">
+
+**Keterangan:** Halaman utama aplikasi yang menampilkan ringkasan aktivitas. Pengguna dapat langsung menekan tombol mulai untuk melakukan pengukuran berat badan ideal.
+
+### 8.3 Tampilan Gender Selection
+<img src="FOTO%20PROJECT/Screenshot%202026-01-15%20211557.png" width="250">
+
+**Keterangan:** Layar pemilihan jenis kelamin. Pemilihan gender sangat penting karena rumus perhitungan BMI dan rekomendasi kesehatan yang diberikan akan disesuaikan secara spesifik untuk laki-laki atau perempuan.
+
+### 8.4 Tampilan Input Data
+<img src="FOTO%20PROJECT/Screenshot%202026-01-15%20211751.png" width="250">
+
+**Keterangan:** Formulir interaktif di mana pengguna akan memasukkan data fisik mereka, seperti Tinggi Badan, Berat Badan, dan Usia untuk kebutuhan perhitungan.
+
+### 8.5 Tampilan Result (Hasil)
+<img src="FOTO%20PROJECT/Screenshot%202026-01-15%20211808.png" width="250">
+
+**Keterangan:** Halaman yang menampilkan skor akhir BMI beserta kategorinya (Kurus, Normal, Gemuk, Obesitas). Dilengkapi dengan desain visual dan warna yang merepresentasikan status kesehatan agar hasil mudah dipahami oleh pengguna.
+
+### 8.6 Tampilan Riwayat (History)
+<img src="FOTO%20PROJECT/Screenshot%202026-01-15%20211620.png" width="250">
+
+**Keterangan:** Layar rekam jejak untuk memantau status BMI dari waktu ke waktu. Terdapat daftar riwayat perhitungan sebelumnya yang membantu pengguna memantau perkembangan kesehatan mereka.
