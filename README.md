@@ -197,7 +197,13 @@ Desain UI terdiri dari 21 layar utama yang dirancang untuk memandu pengguna mula
 
 Berikut adalah video demonstrasi fitur-fitur pada aplikasi FITME:
 
-<video src="https://github.com/MuhammadArkham/Project_FITME/raw/main/FOTO%20PROJECT/Demo_App.mp4" controls width="600"></video>
+<div align="center">
+
+[![Tonton Demo Aplikasi FITME](https://img.shields.io/badge/%E2%96%B6%EF%B8%8F_Tonton_Video_Demo-FITME-068562?style=for-the-badge&logo=youtube&logoColor=white)](https://github.com/MuhammadArkham/Project_FITME/raw/main/FOTO%20PROJECT/Demo_App.mp4)
+
+*Klik tombol di atas untuk memutar/mengunduh video demo aplikasi FITME.*
+
+</div>
 
 ---
 
