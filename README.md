@@ -1,4 +1,5 @@
 <div align="center">
+  <img src="FOTO%20PROJECT/CP.png" alt="Cover Photo" width="800">
   <h1>FITME - Aplikasi Kalkulator BMI</h1>
   <p>Tugas Mata Kuliah Pemrograman Mobile 1</p>
 </div>
@@ -34,7 +35,7 @@
 *(Deteksi location, Bendera, Say Hello/Selamat Datang sesuai lokasi daerah masing-masing)*
 
 <div align="center">
-  <img src="FOTO%20PROJECT/CP.png" alt="Splash Screen" width="300">
+  <img src="FOTO%20PROJECT/Splashscreen.png" alt="Splash Screen" width="300">
 </div>
 
 ---
