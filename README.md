@@ -97,6 +97,35 @@
   <img src="FOTO%20PROJECT/CP.png" alt="Color Palette" width="800">
 </div>
 
+### Penjelasan Desain UI (User Interface)
+Desain UI terdiri dari 21 layar utama yang dirancang untuk memandu pengguna mulai dari membuka aplikasi hingga memantau progres harian.
+
+<details>
+<summary><b>Lihat Detail Keterangan Layar UI</b></summary>
+
+<br>
+
+1. **01. Splash Screen**: Layar pembuka dengan logo identitas FITME saat aplikasi pertama kali dijalankan.
+2. **02 - 04. Onboarding 1-3**: Pengenalan fitur-fitur unggulan aplikasi kepada pengguna baru, seperti memantau pola makan dan kebiasaan sehat.
+3. **05. Pilih Peran**: Layar pemilihan jenis kelamin (Laki-laki / Perempuan) yang menjadi dasar penentuan kebutuhan kalori.
+4. **06. Pilih Tujuan**: Pengguna dapat memilih target spesifik mereka: menurunkan berat badan, menjaga berat badan, atau menambah massa otot.
+5. **07. Input Data Diri**: Pengisian parameter fisik tubuh seperti Usia, Tinggi Badan, Berat Badan, dan Tingkat Aktivitas Harian.
+6. **08. Target Kalori**: Menampilkan target kebutuhan makronutrisi harian (Karbohidrat, Protein, Lemak) yang dipersonalisasi berdasarkan data pengguna.
+7. **09. Tips Harian**: Halaman edukasi yang berisi panduan kesehatan untuk menjaga konsistensi pengguna.
+8. **10. Login**: Layar masuk dengan form email/password, serta opsi otentikasi menggunakan pihak ketiga.
+9. **11. Beranda**: Layar utama beranda yang menampilkan ringkasan kalori, menu cepat, dan rekomendasi harian.
+10. **12. Dashboard**: Layar detail pemantauan kebutuhan kalori harian yang telah dipenuhi beserta asupan nutrisinya.
+11. **13. Menu Makanan**: Katalog berbagai opsi menu sehat yang dikategorikan berdasarkan preferensi.
+12. **14. Rekomendasi**: Daftar kurasi makanan sehat dengan tujuan spesifik (contoh: tinggi protein atau rendah kalori).
+13. **15. Detail Makanan**: Menampilkan informasi gizi lengkap (Karbo, Lemak, Protein) dari sebuah makanan.
+14. **16. Resep**: Daftar inspirasi resep makanan sehat untuk berbagai waktu makan.
+15. **17. Detail Resep**: Menyajikan rincian bahan-bahan dan langkah-langkah praktis untuk memasak resep terkait.
+16. **18. Catatan Harian**: Halaman log makanan tempat pengguna mencatat makanan yang dikonsumsi pada hari tersebut.
+17. **19. Detail Catatan**: Menampilkan rincian nutrisi yang tercatat pada makanan tertentu yang sudah dimakan.
+18. **20. Progress**: Pemantauan hasil program pengguna berupa grafik garis yang menggambarkan tren berat badan dari waktu ke waktu.
+19. **21. Detail Progress**: Laporan rinci dari pencapaian selisih berat badan serta status Indeks Massa Tubuh (BMI) pengguna saat ini.
+</details>
+
 ---
 
 ## 5. UX (User Experience) Video Prototype Project
@@ -135,34 +164,15 @@ https://github.com/user-attachments/assets/75013bff-7b4d-49b4-b8f8-ae11bcdf28c1
 
 ## 8. Implementasi Android Studio
 
-Berikut adalah penjelasan dan tampilan masing-masing UI (User Interface) yang telah diimplementasikan ke dalam Android Studio:
-
-### 8.1 Tampilan Splashscreen
-<img src="FOTO%20PROJECT/Screenshot%202026-01-15%20211819.png" width="250">
-
-**Keterangan:** Tampilan awal saat aplikasi FITME baru dibuka. Berisi logo aplikasi dengan animasi transisi yang halus sebelum pengguna masuk ke menu utama.
-
-### 8.2 Tampilan Home (Dashboard)
-<img src="FOTO%20PROJECT/Screenshot%202026-01-15%20211844.png" width="250">
-
-**Keterangan:** Halaman utama aplikasi yang menampilkan ringkasan aktivitas. Pengguna dapat langsung menekan tombol mulai untuk melakukan pengukuran berat badan ideal.
-
-### 8.3 Tampilan Gender Selection
-<img src="FOTO%20PROJECT/Screenshot%202026-01-15%20211557.png" width="250">
-
-**Keterangan:** Layar pemilihan jenis kelamin. Pemilihan gender sangat penting karena rumus perhitungan BMI dan rekomendasi kesehatan yang diberikan akan disesuaikan secara spesifik untuk laki-laki atau perempuan.
-
-### 8.4 Tampilan Input Data
-<img src="FOTO%20PROJECT/Screenshot%202026-01-15%20211751.png" width="250">
-
-**Keterangan:** Formulir interaktif di mana pengguna akan memasukkan data fisik mereka, seperti Tinggi Badan, Berat Badan, dan Usia untuk kebutuhan perhitungan.
-
-### 8.5 Tampilan Result (Hasil)
-<img src="FOTO%20PROJECT/Screenshot%202026-01-15%20211808.png" width="250">
-
-**Keterangan:** Halaman yang menampilkan skor akhir BMI beserta kategorinya (Kurus, Normal, Gemuk, Obesitas). Dilengkapi dengan desain visual dan warna yang merepresentasikan status kesehatan agar hasil mudah dipahami oleh pengguna.
-
-### 8.6 Tampilan Riwayat (History)
-<img src="FOTO%20PROJECT/Screenshot%202026-01-15%20211620.png" width="250">
-
-**Keterangan:** Layar rekam jejak untuk memantau status BMI dari waktu ke waktu. Terdapat daftar riwayat perhitungan sebelumnya yang membantu pengguna memantau perkembangan kesehatan mereka.
+<table>
+  <tr>
+    <td align="center"><b>Tampilan Splashscreen</b><br><img src="FOTO%20PROJECT/Screenshot%202026-01-15%20211819.png" width="200"></td>
+    <td align="center"><b>Tampilan Home (Dashboard)</b><br><img src="FOTO%20PROJECT/Screenshot%202026-01-15%20211844.png" width="200"></td>
+    <td align="center"><b>Tampilan Gender Selection</b><br><img src="FOTO%20PROJECT/Screenshot%202026-01-15%20211557.png" width="200"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Tampilan Input Data</b><br><img src="FOTO%20PROJECT/Screenshot%202026-01-15%20211751.png" width="200"></td>
+    <td align="center"><b>Tampilan Result</b><br><img src="FOTO%20PROJECT/Screenshot%202026-01-15%20211808.png" width="200"></td>
+    <td align="center"><b>Tampilan Riwayat</b><br><img src="FOTO%20PROJECT/Screenshot%202026-01-15%20211620.png" width="200"></td>
+  </tr>
+</table>
