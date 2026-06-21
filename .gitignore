@@ -1,11 +1,6 @@
 *.iml
 .gradle
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
+/.idea/
 .DS_Store
 /build
 /captures
@@ -13,3 +8,13 @@
 .cxx
 local.properties
 google-services.json
+
+# Keystore files
+*.jks
+*.keystore
+*.p12
+
+# Properties files containing secrets
+keystore.properties
+secrets.properties
+.env

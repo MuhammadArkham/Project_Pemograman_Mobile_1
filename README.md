@@ -1,24 +1,24 @@
 <div align="center">
-  <h1>🏋️‍♂️ FITME - Aplikasi Kalkulator BMI</h1>
+  <h1>FITME - Aplikasi Kalkulator BMI</h1>
   <p>Tugas Mata Kuliah Pemrograman Mobile 1</p>
 </div>
 
 ---
 
-## 📑 Daftar Isi
-- [👤 Identitas Mahasiswa](#-identitas-mahasiswa)
-- [📸 1. Splash Screen](#-1-splash-screen)
-- [📖 2. StoryBoard Project](#-2-storyboard-project)
-- [🎨 3. Mockup Project](#-3-mockup-project)
-- [🖥️ 4. UI (User Interface) Project](#️-4-ui-user-interface-project)
-- [🎬 5. UX (User Experience) Video Prototype Project](#-5-ux-user-experience-video-prototype-project)
-- [📅 6. Link Jadwal pada ClickUp](#-6-link-jadwal-pada-clickup)
-- [🔔 7. Notifikasi Firebase](#-7-notifikasi-firebase)
-- [📱 8. Implementasi Android Studio](#-8-implementasi-android-studio)
+## Daftar Isi
+- [Identitas Mahasiswa](#identitas-mahasiswa)
+- [1. Splash Screen](#1-splash-screen)
+- [2. StoryBoard Project](#2-storyboard-project)
+- [3. Mockup Project](#3-mockup-project)
+- [4. UI (User Interface) Project](#4-ui-user-interface-project)
+- [5. UX (User Experience) Video Prototype Project](#5-ux-user-experience-video-prototype-project)
+- [6. Link Jadwal pada ClickUp](#6-link-jadwal-pada-clickup)
+- [7. Notifikasi Firebase](#7-notifikasi-firebase)
+- [8. Implementasi Android Studio](#8-implementasi-android-studio)
 
 ---
 
-## 👤 Identitas Mahasiswa
+## Identitas Mahasiswa
 
 | Informasi | Keterangan |
 | :--- | :--- |
@@ -30,7 +30,7 @@
 
 ---
 
-## 📸 1. Splash Screen
+## 1. Splash Screen
 *(Deteksi location, Bendera, Say Hello/Selamat Datang sesuai lokasi daerah masing-masing)*
 
 <div align="center">
@@ -39,7 +39,7 @@
 
 ---
 
-## 📖 2. StoryBoard Project
+## 2. StoryBoard Project
 
 <div align="center">
   <img src="FOTO%20PROJECT/Storyboard.png" alt="Storyboard Project" width="800">
@@ -80,7 +80,7 @@
 
 ---
 
-## 🎨 3. Mockup Project
+## 3. Mockup Project
 
 <div align="center">
   <img src="FOTO%20PROJECT/Screenshot%202025-12-19%20002725.png" alt="Mockup Project" width="800">
@@ -88,7 +88,7 @@
 
 ---
 
-## 🖥️ 4. UI (User Interface) Project
+## 4. UI (User Interface) Project
 
 <div align="center">
   <img src="FOTO%20PROJECT/Screenshot%202025-12-19%20003935.png" alt="UI Project 1" width="400">
@@ -97,32 +97,32 @@
 
 ---
 
-## 🎬 5. UX (User Experience) Video Prototype Project
+## 5. UX (User Experience) Video Prototype Project
 
-- 📽️ **Penjelasan project aplikasi**: [Tonton di YouTube](https://youtube.com/shorts/rz2nW9jxM30?si=rgG1yV6PPaogpApr)
-- 📽️ **Tampilan Video Project UI/UX**: [Tonton di YouTube](https://youtube.com/shorts/YG2sh5dMyGQ?si=ND3No_8X5PhxlHR3)
+- **Penjelasan project aplikasi**: [Tonton di YouTube](https://youtube.com/shorts/rz2nW9jxM30?si=rgG1yV6PPaogpApr)
+- **Tampilan Video Project UI/UX**: [Tonton di YouTube](https://youtube.com/shorts/YG2sh5dMyGQ?si=ND3No_8X5PhxlHR3)
 
 ### Demo Splashscreen Aplikasi FITME
 
-**📌 Video Splashscreen – Demo Lokasi Indonesia**
+**Video Splashscreen – Demo Lokasi Indonesia**
 https://github.com/user-attachments/assets/4db58b9a-eda7-4f9a-9dac-0ce266e481fa
 
-**📌 Video Splashscreen – Demo Lokasi United Kingdom**
+**Video Splashscreen – Demo Lokasi United Kingdom**
 https://github.com/user-attachments/assets/bcdfe696-4ebc-4726-af12-2006afc45749
 
-**📌 Video Splashscreen – Demo Lokasi Spain**
+**Video Splashscreen – Demo Lokasi Spain**
 https://github.com/user-attachments/assets/75013bff-7b4d-49b4-b8f8-ae11bcdf28c1
 
 ---
 
-## 📅 6. Link Jadwal pada ClickUp
+## 6. Link Jadwal pada ClickUp
 
-- 📊 **Link ClickUp (Board)**: [Akses Board](https://sharing.clickup.com/90181791504/b/2kzm1vrg-558/board)
-- 📈 **Link ClickUp (Gantt)**: [Akses Gantt](https://sharing.clickup.com/90181791504/g/2kzm1vrg-578/gantt)
+- **Link ClickUp (Board)**: [Akses Board](https://sharing.clickup.com/90181791504/b/2kzm1vrg-558/board)
+- **Link ClickUp (Gantt)**: [Akses Gantt](https://sharing.clickup.com/90181791504/g/2kzm1vrg-578/gantt)
 
 ---
 
-## 🔔 7. Notifikasi Firebase
+## 7. Notifikasi Firebase
 
 <div align="center">
   <img src="FOTO%20PROJECT/Screenshot%202025-12-19%20005452.png" alt="Notifikasi Firebase 1" width="300">
@@ -131,7 +131,7 @@ https://github.com/user-attachments/assets/75013bff-7b4d-49b4-b8f8-ae11bcdf28c1
 
 ---
 
-## 📱 8. Implementasi Android Studio
+## 8. Implementasi Android Studio
 
 <table>
   <tr>
