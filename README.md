@@ -133,16 +133,13 @@ Desain UI terdiri dari 21 layar utama yang dirancang untuk memandu pengguna mula
 - **Penjelasan project aplikasi**: [Tonton di YouTube](https://youtube.com/shorts/rz2nW9jxM30?si=rgG1yV6PPaogpApr)
 - **Tampilan Video Project UI/UX**: [Tonton di YouTube](https://youtube.com/shorts/YG2sh5dMyGQ?si=ND3No_8X5PhxlHR3)
 
-### Demo Splashscreen Aplikasi FITME
+### Demo Aplikasi FITME
 
-**Video Splashscreen – Demo Lokasi Indonesia**
-https://github.com/user-attachments/assets/4db58b9a-eda7-4f9a-9dac-0ce266e481fa
+Berikut adalah video demonstrasi fitur-fitur pada aplikasi FITME:
 
-**Video Splashscreen – Demo Lokasi United Kingdom**
-https://github.com/user-attachments/assets/bcdfe696-4ebc-4726-af12-2006afc45749
+[**▶ Tonton Video Demo Aplikasi (MP4)**](FOTO%20PROJECT/Demo_App.mp4)
 
-**Video Splashscreen – Demo Lokasi Spain**
-https://github.com/user-attachments/assets/75013bff-7b4d-49b4-b8f8-ae11bcdf28c1
+*(Jika video tidak terputar otomatis, silakan klik tautan di atas).*
 
 ---
 
