@@ -45,36 +45,96 @@
   <img src="FOTO%20PROJECT/Storyboard.png" alt="Storyboard Project" width="800">
 </div>
 
-### Detail Storyboard Aplikasi “FITME” – Kalkulator BMI
+### Detail Storyboard Aplikasi "FITME"
 
 <details>
 <summary><b>Lihat Detail Frame Storyboard</b></summary>
 
 <br>
 
-#### **Frame 1 — Splash Screen**
-* **Visual**: Layar penuh menampilkan logo “FITME” (ikon hati) di tengah. Nama aplikasi “FITME” berada di bawah logo.
-* **Deskripsi**: Tampilan pertama ketika aplikasi dibuka. Berfungsi sebagai branding dan proses loading awal sebelum masuk ke halaman utama.
+#### **Frame 01 -- Splash Screen**
+* **Visual**: Layar pembuka menampilkan logo FITME dengan tagline "Fit Today, Better Tomorrow" di atas latar gradasi hijau tua.
+* **Deskripsi**: Tampilan pertama saat aplikasi dijalankan. Berfungsi sebagai branding dan proses loading awal.
 
-#### **Frame 2 — Halaman Utama**
-* **Visual**: Ilustrasi di bagian atas. Dua tombol utama: **“Hitung BMI Sekarang”** dan **“Hitung BMI”**. Terdapat navigasi bawah (navbar).
-* **Deskripsi**: Menjadi dashboard utama. Pengguna dapat langsung memulai proses perhitungan BMI.
+#### **Frame 02 -- Onboarding 1**
+* **Visual**: Ilustrasi orang makan sehat dengan judul "Makan Sehat, Hidup Lebih Baik" dan tombol "Lanjut".
+* **Deskripsi**: Slide pertama onboarding yang mengedukasi pengguna tentang pentingnya pola makan sehat.
 
-#### **Frame 3 — Pilih Jenis Kelamin**
-* **Visual**: Judul: *“Pilih Jenis Kelamin”*. Dua pilihan dengan ikon: Laki-laki & Perempuan. Tombol **“Simpan”** di bagian bawah.
-* **Deskripsi**: Langkah pertama sebelum menghitung BMI. Pengguna wajib memilih jenis kelamin karena dapat berpengaruh pada perhitungan.
+#### **Frame 03 -- Onboarding 2**
+* **Visual**: Ilustrasi orang menimbang badan dengan judul "Pantau Berat Badan, Pahami Progressmu".
+* **Deskripsi**: Slide kedua yang memperkenalkan fitur pemantauan berat badan secara berkala.
 
-#### **Frame 4 — Input Data**
-* **Visual**: Header dengan tombol kembali (“<”) dan judul *“Input Data”*. Tiga kolom input: Tinggi Badan, Berat Badan, Tingkat Aktivitas. Tombol **“Hitung”** di bagian bawah.
-* **Deskripsi**: Pengguna mengisi data fisik untuk proses perhitungan BMI. Setelah lengkap, pengguna menekan “Hitung”.
+#### **Frame 04 -- Onboarding 3**
+* **Visual**: Ilustrasi kebiasaan sehat dengan judul "Bangun Kebiasaan, Raih Hidup Sehat" dan tombol "Lanjut".
+* **Deskripsi**: Slide terakhir onboarding yang memotivasi pengguna untuk membangun kebiasaan hidup sehat.
 
-#### **Frame 5 — Result Screen**
-* **Visual**: Judul: *“Hasil BMI”*. Angka BMI besar di tengah (misal: **22.5**). Status BMI (Normal / Kurus / Gemuk). Grafik batang sederhana untuk menunjukkan rentang atau kategori BMI. Tombol **“Simpan”**.
-* **Deskripsi**: Menampilkan hasil akhir perhitungan. Pengguna mengetahui nilai BMI dan kategorinya. Hasil dapat disimpan ke riwayat.
+#### **Frame 05 -- Pilih Peran**
+* **Visual**: Dua ikon pilihan (Laki-laki & Perempuan) dengan tombol "Lanjutkan".
+* **Deskripsi**: Pemilihan jenis kelamin yang menjadi dasar penentuan kebutuhan kalori dan rekomendasi.
 
-#### **Frame 6 — History Screen**
-* **Visual**: Judul: *“Riwayat Perhitungan”*. Grafik garis (line chart) untuk menunjukkan tren BMI dari waktu ke waktu. Tabel data berisi tanggal dan nilai BMI (misal: Hari ini, Kemarin). Tombol **“Simpan”** atau opsi tambahan seperti “Export” bila dibutuhkan.
-* **Deskripsi**: Menampilkan catatan hasil perhitungan sebelumnya. Membantu pengguna memantau perubahan berat dan status kesehatan.
+#### **Frame 06 -- Pilih Tujuan**
+* **Visual**: Tiga opsi tujuan: Menurunkan Berat, Menjaga Berat, dan Menaikkan Berat dengan tombol "Lanjutkan".
+* **Deskripsi**: Pengguna memilih target spesifik mereka agar rekomendasi nutrisi lebih personal.
+
+#### **Frame 07 -- Input Data Diri**
+* **Visual**: Form input angka untuk Usia (20), Tinggi Badan, Berat Badan, dan Aktivitas dengan tombol "Simpan & Lanjut".
+* **Deskripsi**: Pengisian parameter fisik tubuh untuk kebutuhan perhitungan kalori dan BMI.
+
+#### **Frame 08 -- Target Kalori**
+* **Visual**: Angka besar "2010" kcal sebagai target harian, konsumsi di pagi minimal 3 kue, dan tombol navigasi.
+* **Deskripsi**: Menampilkan target kebutuhan makronutrisi harian yang dipersonalisasi berdasarkan data pengguna.
+
+#### **Frame 09 -- Tips Harian**
+* **Visual**: Daftar tips kesehatan seperti "Sarapan setiap hari" dan "Makan sayur" dengan tombol "Siap, Mulai!".
+* **Deskripsi**: Halaman edukasi berisi panduan praktis untuk menjaga konsistensi pola hidup sehat.
+
+#### **Frame 10 -- Login**
+* **Visual**: Logo FITME, ucapan "Selamat, Datang Kembali!", form Email & Password, serta tombol masuk.
+* **Deskripsi**: Layar autentikasi pengguna untuk masuk ke akun yang sudah terdaftar.
+
+#### **Frame 11 -- Beranda**
+* **Visual**: Sapaan "Halo, Selamat Pagi!", ringkasan kalori harian, menu cepat, dan rekomendasi aktivitas.
+* **Deskripsi**: Halaman utama yang menampilkan ringkasan aktivitas dan pintasan ke fitur-fitur utama.
+
+#### **Frame 12 -- Dashboard**
+* **Visual**: Ringkasan kalori (1200/2010 kcal), progress bar nutrisi (Karbo, Protein, Lemak), dan daftar makanan.
+* **Deskripsi**: Layar detail pemantauan kebutuhan kalori harian beserta asupan nutrisi yang sudah terpenuhi.
+
+#### **Frame 13 -- Menu Makanan**
+* **Visual**: Kolom pencarian dan daftar menu (Nasi Ayam Panggang, Salad Sayur, Oatmeal Buah, dll.) dengan kalori.
+* **Deskripsi**: Katalog berbagai opsi menu makanan sehat yang dapat dipilih pengguna.
+
+#### **Frame 14 -- Rekomendasi**
+* **Visual**: Judul "Rekomendasi untuk Kamu" dengan daftar makanan rekomendasi (Telur, Tahu, dll.).
+* **Deskripsi**: Daftar kurasi makanan sehat berdasarkan tujuan spesifik pengguna.
+
+#### **Frame 15 -- Detail Makanan**
+* **Visual**: Gambar makanan, informasi kalori (450 kcal), detail nutrisi (Karbohidrat, Protein, Lemak), dan tombol "Tambahkan ke Catatan".
+* **Deskripsi**: Menampilkan informasi gizi lengkap dari sebuah makanan yang dipilih.
+
+#### **Frame 16 -- Resep**
+* **Visual**: Kategori resep (Sarapan, Makan Siang, dll.) dengan daftar resep bergambar.
+* **Deskripsi**: Daftar inspirasi resep makanan sehat untuk berbagai waktu makan.
+
+#### **Frame 17 -- Detail Resep**
+* **Visual**: Gambar makanan, daftar bahan-bahan, langkah memasak, dan tombol "Simpan Resep".
+* **Deskripsi**: Rincian bahan dan langkah-langkah praktis untuk memasak resep terkait.
+
+#### **Frame 18 -- Catatan Harian**
+* **Visual**: Tanggal dan ringkasan harian, daftar makanan yang dimakan (Oatmeal Buah, Nasi Ayam, dll.) dengan kalori.
+* **Deskripsi**: Halaman log makanan tempat pengguna mencatat apa yang dikonsumsi pada hari tersebut.
+
+#### **Frame 19 -- Detail Catatan**
+* **Visual**: Judul "Detail Catatan" dengan tanggal, detail makanan (Nasi Ayam Panggang), nutrisi rinci, dan tombol "Edit Catatan".
+* **Deskripsi**: Menampilkan rincian nutrisi dari makanan tertentu yang sudah dicatat pengguna.
+
+#### **Frame 20 -- Progress**
+* **Visual**: Tab (Berat Badan, Kalori, Aktivitas), grafik garis tren berat badan, dan tombol "Catat Berat".
+* **Deskripsi**: Pemantauan hasil program berupa grafik yang menggambarkan tren berat badan dari waktu ke waktu.
+
+#### **Frame 21 -- Detail Progress**
+* **Visual**: Angka besar "60.2 kg", perubahan "-1.5 kg", BMI "20.8" (Normal), dan tombol "Catat Berat Baru".
+* **Deskripsi**: Laporan rinci pencapaian berat badan serta status Indeks Massa Tubuh (BMI) pengguna saat ini.
 
 </details>
 
@@ -137,9 +197,7 @@ Desain UI terdiri dari 21 layar utama yang dirancang untuk memandu pengguna mula
 
 Berikut adalah video demonstrasi fitur-fitur pada aplikasi FITME:
 
-[**▶ Tonton/Unduh Video Demo Aplikasi (MP4)**](https://github.com/MuhammadArkham/Project_FITME/raw/main/FOTO%20PROJECT/Demo_App.mp4)
-
-*(Tautan di atas akan memutar atau mengunduh video secara langsung untuk menghindari error batas ukuran dari GitHub).*
+<video src="https://github.com/MuhammadArkham/Project_FITME/raw/main/FOTO%20PROJECT/Demo_App.mp4" controls width="600"></video>
 
 ---
 
