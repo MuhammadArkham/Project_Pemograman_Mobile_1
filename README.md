@@ -17,7 +17,7 @@
 
 ---
 
-## Daftar Isi
+## 
 - [Identitas Mahasiswa](#identitas-mahasiswa)
 - [1. Splash Screen](#1-splash-screen)
 - [2. StoryBoard Project](#2-storyboard-project)
