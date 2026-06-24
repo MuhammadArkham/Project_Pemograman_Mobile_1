@@ -199,7 +199,7 @@ Berikut adalah video demonstrasi fitur-fitur pada aplikasi FITME:
 
 <div align="center">
 
-[![Tonton Demo Aplikasi FITME](https://img.shields.io/badge/%E2%96%B6%EF%B8%8F_Tonton_Video_Demo-FITME-068562?style=for-the-badge&logo=youtube&logoColor=white)](https://github.com/MuhammadArkham/Project_FITME/raw/main/FOTO%20PROJECT/Demo_App.mp4)
+[![Tonton Demo Aplikasi FITME](https://youtube.com/shorts/_H6tcHBekvo?si=apevXHHTCkccnWtz)
 
 *Klik tombol di atas untuk memutar/mengunduh video demo aplikasi FITME.*
 
