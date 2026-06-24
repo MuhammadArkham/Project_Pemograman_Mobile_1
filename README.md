@@ -193,19 +193,10 @@ Desain UI terdiri dari 21 layar utama yang dirancang untuk memandu pengguna mula
 - **Penjelasan project aplikasi**: [Tonton di YouTube](https://youtube.com/shorts/rz2nW9jxM30?si=rgG1yV6PPaogpApr)
 - **Tampilan Video Project UI/UX**: [Tonton di YouTube](https://youtube.com/shorts/YG2sh5dMyGQ?si=ND3No_8X5PhxlHR3)
 
-### Demo Aplikasi FITME
+## Demo Aplikasi FITME
 
-Berikut adalah video demonstrasi fitur-fitur pada aplikasi FITME:
+* 🎥 **Demo Aplikasi FITME**: [Tonton di YouTube](https://youtube.com/shorts/_H6tcHBekvo?si=apevXHHTCkccnWtz)
 
-<div align="center">
-
-[![Tonton Demo Aplikasi FITME](https://youtube.com/shorts/_H6tcHBekvo?si=apevXHHTCkccnWtz)
-
-*Klik tombol di atas untuk memutar/mengunduh video demo aplikasi FITME.*
-
-</div>
-
----
 
 ## 6. Link Jadwal pada ClickUp
 
