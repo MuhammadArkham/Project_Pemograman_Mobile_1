@@ -36,18 +36,15 @@
 
 ### Demo dan Video
 
-- **Penjelasan project aplikasi**: [Tonton di YouTube](https://youtube.com/shorts/rz2nW9jxM30?si=rgG1yV6PPaogpApr)
-
-
-- 🎥 **Demo Aplikasi FITME**: [Tonton di YouTube](https://youtube.com/shorts/_H6tcHBekvo?si=apevXHHTCkccnWtz)
+- **Demo Aplikasi FITME**: [Tonton di YouTube](https://youtube.com/shorts/_H6tcHBekvo?si=apevXHHTCkccnWtz)
 
 ### Manajemen Project
 
 - **Link ClickUp (Board)**: [Akses Board](https://sharing.clickup.com/90181791504/b/2kzm1vrg-558/board)
-
+- **Penjelasan project aplikasi**: [Tonton di YouTube](https://youtube.com/shorts/rz2nW9jxM30?si=rgG1yV6PPaogpApr)
 - **Link ClickUp (Gantt)**: [Akses Gantt](https://sharing.clickup.com/90181791504/g/2kzm1vrg-578/gantt)
 
-### 📋 Daftar Isi Dokumen
+### Daftar Isi Dokumen
 1. [Splash Screen & Lokalisasi](#1-splash-screen)
 2. [StoryBoard Project](#2-storyboard-project)
 3. [Mockup Project](#3-mockup-project)
