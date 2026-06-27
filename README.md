@@ -38,7 +38,6 @@
 
 - **Penjelasan project aplikasi**: [Tonton di YouTube](https://youtube.com/shorts/rz2nW9jxM30?si=rgG1yV6PPaogpApr)
 
-- **Tampilan Video Project UI/UX**: [Tonton di YouTube](https://youtube.com/shorts/YG2sh5dMyGQ?si=ND3No_8X5PhxlHR3)
 
 - 🎥 **Demo Aplikasi FITME**: [Tonton di YouTube](https://youtube.com/shorts/_H6tcHBekvo?si=apevXHHTCkccnWtz)
 
